@@ -1,0 +1,13 @@
+<p id="text"></p>
+
+<script>
+let msg = "Typing effect in JavaScript...";
+let i = 0;
+function type() {
+  if (i < msg.length) {
+    document.getElementById("text").textContent += msg.charAt(i++);
+    setTimeout(type, 100);
+  }
+}
+type();
+</script>
